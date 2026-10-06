@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculadora">
+    <h1>CALCULADORA</h1>
+ 
+    <!-- Visor: o resultado aparece aqui -->
+    <p id="resultado">0</p>
+ 
+    <!-- A conta: número, operação, número -->
+    <div class="conta">
+      <input type="number" id="numero1" placeholder="0">
+      <select id="operacao">
+        <option value="+">+</option>
+        <option value="-">−</option>
+        <option value="x">x</option>
+        <option value="/">÷</option>
+      </select>
+      <input type="number" id="numero2" placeholder="0">
+    </div>
+ 
+    <!-- Botão de igual -->
+    <button id="botao-calcular">=</button>
+  </main>
+ 
+  <script src="script.js"></script>
+</body>
+</html>

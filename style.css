@@ -1,0 +1,80 @@
+/* Reset e estilo geral */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: Arial, sans-serif;
+  background: #0b3c49;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+/* Corpo da calculadora */
+.calculadora {
+  background: #2d2d2d;
+  border-radius: 20px;
+  padding: 24px;
+  width: 300px;
+  box-shadow: 0 10px 25px black;
+}
+ 
+.calculadora h1 {
+  color: #999;
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+/* Visor */
+#resultado {
+  background: #c9d9b5;
+  color: #222;
+  font-family: monospace;
+  font-size: 22px;
+  text-align: right;
+  padding: 18px 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Linha da conta: três itens lado a lado */
+.conta {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+ 
+.conta input,
+.conta select {
+  width: 100%;
+  padding: 14px 6px;
+  border: none;
+  border-radius: 10px;
+  background: #505050;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+ 
+.conta select {
+  width: 70px;
+  background: #ff8a3d;
+}
+
+/* Botão de igual */
+.calculadora button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #ff8a3d;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+}
+ 
+.calculadora button:hover {
+  background: #e8701f;
+}
+
